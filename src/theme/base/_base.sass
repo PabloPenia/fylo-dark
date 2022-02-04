@@ -1,0 +1,50 @@
+@use '../config' as *
+@use './extends' as *
+@use './base/mixins' as *
+body
+  color: $cMain
+  background-color: $cBgMain
+  font-family: 'Open Sans', sans-serif
+  line-height: 3.2rem
+section
+  padding: 1em $spSides
+h1, h2, h3, h4, h5, h6
+  font-family: 'Raleway', sans-serif
+  font-weight: 700
+h1
+  font-size: 4rem
+  line-height: 7rem
+a
+  color: $cMain
+  text-decoration: none
+  @include hover
+    &:hover
+      text-decoration: underline
+p
+  padding: 1em 0
+.btn
+  display: inline-block
+  margin: 2rem auto
+  padding: 1em 2em
+  background: linear-gradient(to right, $cAccentCyan, $cAccentBlue 70%)
+  border-radius: 10rem
+  font:
+    family: 'Raleway', sans-serif
+    size: 2.2rem
+    weight: 700
+  text-align: center
+  &:focus, &:active
+    background: $cAccentCyan
+  @include hover
+    &:hover
+      background: $cAccentCyan
+.flex
+  display: flex
+  flex-direction: column
+  @include breakpoint('small')
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: stretch
+.icon
+  @extend %icon

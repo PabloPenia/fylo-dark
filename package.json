@@ -3,7 +3,8 @@
   "homepage": "https://pablopenia.github.io/fylo-dark",
   "author": "Pablo Peña",
   "version": "1.0.0",
-  "description": "",
+  "license": "MIT",
+  "description": "Simple landing page for Web Storage Service. Made with Pugjs and Dart-Sass.",
   "babel": {
     "presets": [
       "@babel/env"

@@ -9,18 +9,20 @@ Design and images from [Frontend Mentor](https://www.frontendmentor.io/challenge
 
 ## Build
 
-**Clone** `git clone https://github.com/PabloPenia/fylo-dark.git`
-**Install dependencies** Requires [nodejs](https://nodejs.org) and [npm](https://npmjs.com)
+- **Clone** `git clone https://github.com/PabloPenia/fylo-dark.git`
+- **Install dependencies** Requires [nodejs](https://nodejs.org) and [npm](https://npmjs.com)
+
 Run: `npm ci`
-**Build** run `npm build` (builds to /dist/index.html)
+
+- **Build** run `npm build` (builds to /dist/index.html)
 
 ### More Tasks / Scripts
 
-`gulp` and `npm start` - Build everything and start watching changes.
-`gulp themeBuilder` - Build styles
-`gulp pageBuilder` - Build html
-`gulp watcher` - Watch changes
-`gulp copyyAssets` - Copy/update images from './src/images' to './dist/assets/images'
+- `gulp` and `npm start` - Build everything and start watching changes.
+- `gulp themeBuilder` - Build styles
+- `gulp pageBuilder` - Build html
+- `gulp watcher` - Watch changes
+- `gulp copyyAssets` - Copy/update images from './src/images' to './dist/assets/images'
 
 ### Dependencies
 

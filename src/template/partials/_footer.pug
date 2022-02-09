@@ -4,9 +4,9 @@ footer#footer.flex
 
     p It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
 
-    form(action="").flex
-      label(for="email") 
-      input(type="email" name="email")
+    form.flex
+    label(for="email" id="email" class="hidden") Email
+      input(type="email" name="email" placeholder="email@example.com" aria-labelledby="email")
       button.btn(type="submit") Get Started For Free
   .brand
     a.icon(href= '#')

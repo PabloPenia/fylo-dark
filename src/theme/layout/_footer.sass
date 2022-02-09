@@ -1,5 +1,6 @@
 @use '../config' as *
 @use '../base/mixins' as *
+@use '../base/extends' as *
 #footer
   margin-top: 25rem
   padding: 3em $spSides
@@ -27,8 +28,11 @@
       max-width: 70rem
       top: -20%
     form
+      position: relative
       width: 100%
       gap: 2em
+    .hidden
+      @extend %hidden
     input
       flex: 1 1 100%
       max-height: 5em

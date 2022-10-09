@@ -1,35 +1,43 @@
 {
-  "name": "fylo-dark",
-  "homepage": "https://pablopenia.github.io/fylo-dark",
-  "author": "Pablo Peña",
-  "version": "1.0.0",
-  "license": "MIT",
-  "description": "Simple landing page for Web Storage Service. Made with Pugjs and Dart-Sass.",
-  "babel": {
-    "presets": [
-      "@babel/env"
-    ]
-  },
-  "scripts": {
-    "start": "gulp",
-    "build": "gulp build",
-    "deploy": "gh-pages -d dist"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.17.0",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/register": "^7.17.0",
-    "autoprefixer": "^10.4.2",
-    "cssnano": "^5.0.16",
-    "gh-pages": "^4.0.0",
-    "gulp": "^4.0.2",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^9.0.1",
-    "gulp-pug": "^5.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "postcss-normalize": "^10.0.1",
-    "sass": "^1.49.7"
-  }
+	"name": "fylo-dark",
+	"version": "1.1.0",
+	"description": "Simple landing page for Web Storage Service. Made with Pugjs and Dart-Sass.",
+	"author": {
+		"name": "Pablo Peña",
+		"email": "pablopenia.dev@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pablopenia/random-quote-machine.git"
+	},
+	"homepage": "https://pablopenia.github.io/fylo-dark",
+	"license": "GPL-3.0-or-later",
+	"babel": {
+		"presets": [
+			"@babel/env"
+		]
+	},
+	"scripts": {
+		"start": "gulp",
+		"build": "gulp build",
+		"deploy": "gh-pages -d dist"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.17.0",
+		"@babel/preset-env": "^7.16.11",
+		"@babel/register": "^7.17.0",
+		"autoprefixer": "^10.4.2",
+		"browser-sync": "^2.27.10",
+		"cssnano": "^5.0.16",
+		"gh-pages": "^4.0.0",
+		"gulp": "^4.0.2",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^9.0.1",
+		"gulp-pug": "^5.0.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^5.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"postcss-normalize": "^10.0.1",
+		"sass": "^1.49.7"
+	}
 }

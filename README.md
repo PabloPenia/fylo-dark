@@ -18,25 +18,4 @@ Run: `npm ci`
 
 ### More Tasks / Scripts
 
-- `gulp` and `npm start` - Build everything and start watching changes.
-- `gulp themeBuilder` - Build styles
-- `gulp pageBuilder` - Build html
-- `gulp watcher` - Watch changes
-- `gulp copyyAssets` - Copy/update images from './src/images' to './dist/assets/images'
-
-### Dependencies
-
-- gulp 5
-- gulp-plumber
-- gulp-postcss
-- gulp-pug,
-- gulp-rename
-- gulp-sass
-- gulp-sourcemaps
-- @babel/core
-- @babel/preset-env
-- @babel/register
-- autoprefixer
-- cssnano
-- postcss-normalize
-- sass
+- see in `package.json`

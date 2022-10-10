@@ -1,0 +1,37 @@
+@use '../functions' as *;
+
+@mixin mediaQuery($from: null, $until: null, $and: null, $media: all) {
+	$min: 0;
+	$max: 0;
+	$query: '';
+
+	@if $from {
+		$min: getMediaQuery($from, from);
+	}
+
+	@if $until {
+		$max: getMediaQuery($until, until);
+	}
+
+	@if $min >0 {
+		$query: '#{$query} and (min-width: #{$min})';
+	}
+
+	@if $max >0 {
+		$query: '#{$query} and (max-width: #{$max})';
+	}
+
+	@if $and {
+		$query: '#{$query} and (#{$and})';
+	}
+
+	@if ($media == 'all' and $query != '') {
+		$media: '';
+		$query: str-slice(unquote($query), 6);
+	}
+
+	// return
+	@media #{$media + $query} {
+		@content;
+	}
+}

@@ -1,0 +1,50 @@
+@use '../abstracts/mixin';
+.flex {
+	@include mixin.flex;
+}
+.sr-only {
+	@extend %sr-only;
+}
+.btn {
+	display: inline-block;
+	margin: 2rem auto;
+	padding: 1em 2em;
+	background: linear-gradient(
+		to right,
+		var(--col__accent),
+		var(--col__accent2) 70%
+	);
+	border-radius: 10rem;
+	font: {
+		family: var(--font__headings);
+		// size: 2rem;
+		weight: 700;
+	}
+	text-align: center;
+	@include mixin.hover {
+		background: var(--col__accent);
+		text-decoration: none;
+	}
+}
+.copy {
+	width: 100%;
+	padding: 0 var(--sp-sides);
+	justify-content: center;
+	gap: 2em;
+	background: white;
+	font-size: var(--txt__base--small);
+	&,
+	& a {
+		color: black;
+	}
+	p {
+		padding: 0;
+	}
+	li {
+		padding-left: 0.5em;
+		display: inline-block;
+	}
+	i.fa-linkedin {
+		color: #0077b5;
+	}
+}

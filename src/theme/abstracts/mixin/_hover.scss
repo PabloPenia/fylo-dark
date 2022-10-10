@@ -1,0 +1,17 @@
+$pointer: 'fine';
+@mixin hover {
+	@media (hover: hover) and (pointer: fine) {
+		&:hover,
+		&:focus {
+			@content;
+		}
+	}
+}
+@mixin no-hover {
+	@media (hover: none) {
+		&:active,
+		&:focus {
+			@content;
+		}
+	}
+}

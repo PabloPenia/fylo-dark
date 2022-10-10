@@ -1,0 +1,40 @@
+@use '../abstracts/mixin';
+body {
+	color: var(--col__base);
+	background-color: var(--col__bg);
+	font: {
+		family: var(--font__base);
+		size: var(--txt__base);
+	}
+	line-height: 3.2rem;
+	main > section,
+	> header,
+	> footer {
+		padding: 1em var(--sp-sides);
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font: {
+		family: var(--font__headings);
+		weight: 700;
+	}
+}
+h1 {
+	font-size: 3rem;
+	line-height: 5rem;
+}
+a {
+	color: var(--col__base);
+	text-decoration: none;
+	@include mixin.hover {
+		text-decoration: underline;
+	}
+}
+p {
+	padding: 1em 0;
+}

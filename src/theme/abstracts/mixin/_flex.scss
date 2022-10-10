@@ -1,0 +1,29 @@
+@use './mediaQuery' as *;
+
+@mixin flex-row {
+	display: flex;
+	// flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5em;
+	width: 100%;
+	// @include mediaQuery('tablet') {
+	// 	flex-direction: row;
+	// }
+}
+
+%flex {
+	@include flex-row;
+}
+/// @example
+/// ```scss
+/// @include flex(false); // on media queries
+/// @include flex; // everywhere except media queries
+/// ```
+@mixin flex($extend: true) {
+	@if $extend {
+		@extend %flex;
+	} @else {
+		@include flex-row;
+	}
+}

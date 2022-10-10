@@ -1,0 +1,17 @@
+$white: hsl(0, 0%, 100%);
+$cyan: hsl(198, 60%, 50%);
+$cyan--light: hsl(176, 68%, 64%);
+$red: hsl(0, 100%, 63%);
+$blue--dark: hsl(218, 28%, 13%);
+$blue--dark2: hsl(217, 28%, 15%);
+$blue--dark3: hsl(216, 53%, 9%);
+$blue--dark4: hsl(219, 30%, 18%);
+@mixin scheme {
+	--col__base: #{$white};
+	--col__accent: #{$cyan--light};
+	--col__accent2: #{$cyan};
+	--col__error: #{$red};
+	--col__bg: #{$blue--dark};
+	--col__bg--footer: #{$blue--dark3};
+	--col__bg--testimonial: #{$blue--dark4};
+}

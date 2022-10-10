@@ -1,0 +1,92 @@
+@use '../abstracts/mixin';
+#footer {
+	margin-top: 25rem;
+	padding: 3em var(--sp-sides);
+	position: relative;
+	gap: 3em;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background: var(--col__bg--footer);
+	@include mixin.mediaQuery('tablet') {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: unset;
+	}
+	.email {
+		position: absolute;
+		width: 90%;
+		top: -15%;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 2em;
+		background: var(--col__bg);
+		border: 1px solid var(--col__bg--footer);
+		border-radius: 1rem;
+		box-shadow: 3px 3px 6px var(--col__bg--footer);
+		text-align: center;
+		@include mixin.mediaQuery('tablet') {
+			max-width: 70rem;
+			top: -20%;
+		}
+		form {
+			flex-direction: column;
+			position: relative;
+			width: 100%;
+			gap: 2em;
+		}
+		input {
+			width: 100%;
+			max-height: 5em;
+			padding: 1em 2em;
+			border: 0;
+			border-radius: 10rem;
+			font-size: 2rem;
+			text-align: center;
+		}
+		.btn {
+			font-size: 2rem;
+			margin: 0;
+			width: 100%;
+		}
+	}
+	.brand {
+		margin-top: 25rem;
+		width: 100%;
+	}
+	> p {
+		flex: 1 1 30%;
+		i {
+			padding-right: 1em;
+		}
+	}
+	.icon {
+		width: 24rem;
+		padding-bottom: 6rem;
+	}
+	ul {
+		align-self: flex-start;
+	}
+	li {
+		padding: 0.5em 0;
+	}
+	.social {
+		margin: 0 auto;
+		text-align: center;
+		align-self: center;
+		li {
+			margin: 0 0.2em;
+			display: inline-block;
+			a {
+				width: 2em;
+				height: 2em;
+				justify-content: center;
+				border: 1px solid currentColor;
+				border-radius: 50%;
+				text-decoration: none;
+				@include mixin.hover {
+					color: var(--col__accent);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+///  Map that contains pre-stablished breakpoints
+/// @author Pablo Peña
+/// @type Map
+$breakpoints: (
+	// min-width
+	'from':
+		(
+			'smaller': 375px,
+			'tablet': 768px,
+			'desktop--old': 1200px,
+			'desktop': 1366px,
+			'high-res': 1920px,
+		),
+	// max-width
+	until: ()
+);

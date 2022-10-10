@@ -1,0 +1,14 @@
+@use '../abstracts/mixin';
+@use './colors';
+@use './fonts';
+:root {
+	@include colors.scheme;
+	@include fonts.stack;
+	--txt__base: 1.6rem;
+	--txt__base--small: 1.4rem;
+	--sp-sides: 6%;
+	@include mixin.mediaQuery($from: 'tablet') {
+		--txt__base: 2.4rem;
+		--txt__base--small: 2rem;
+	}
+}

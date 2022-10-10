@@ -1,0 +1,24 @@
+@use '../abstracts/mixin';
+.l-hero {
+	text-align: center;
+	background: var(--col__bg) url('images/bg-curvy-mobile.svg') bottom 150% 50%
+		no-repeat;
+	@include mixin.mediaQuery('tablet') {
+		background-image: url('images/bg-curvy-desktop.svg');
+		background-size: 120%;
+	}
+	.logo {
+		width: 11rem;
+		padding-bottom: 3rem;
+	}
+	nav a {
+		margin-left: 1.5em;
+	}
+	&__content {
+		max-width: 70rem;
+		margin: 2em auto;
+	}
+	.btn {
+		min-width: 35rem;
+	}
+}

@@ -1,0 +1,22 @@
+@use '../vars/breakpoints' as map;
+/// Gets a breakpoint value from a Map, or set a new one.
+/// @todo - complete this doc // TODO
+/// @author Pablo Peña
+/// @param {number | string} $val - Number or breakpoint name (optional)
+/// @param {string} $breakpoint [null] - name of map (from | until)
+/// @require {Map} $breakpoints
+/// @return {number | null} - Desired value or null
+/// @example
+///   getBreakpoint(1024px);
+///   getBreakpoint('tablet', from);
+@function getMediaQuery($val, $breakpoint: null) {
+	@if type-of($val) == 'number' {
+		@return $val;
+	} @else if $breakpoint and map-has-key(map.$breakpoints, $breakpoint, $val) {
+		@return map-get(map.$breakpoints, $breakpoint, #{$val});
+	} @else {
+		@warn "`#{$val}` is not valid breakpoint. "+"Available breakpoints are: #{map-keys(map.$breakpoints)}, or any number.";
+
+		@return null;
+	}
+}
